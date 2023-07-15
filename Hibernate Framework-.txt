@@ -1,0 +1,16 @@
+Hibernate Framework:-
+====================
+Hibernate ORM (Object Relational Mapping) is a popular Java-based framework used for mapping an object-oriented domain model to a relational database. It provides an efficient way of storing and retrieving data from a database by mapping database tables to Java classes and vice versa.
+
+Features of Hibernate ORM:
+
+-> Object-Relational Mapping: Hibernate ORM provides support for mapping Java classes to database tables and vice versa. This allows  
+   developers to work with objects rather than low-level SQL statements.
+-> Lazy Loading: Hibernate ORM provides support for lazy loading, which is a technique for loading objects on demand rather than loading  
+   them all at once. This can help to improve performance and reduce memory usage.
+-> Caching: Hibernate ORM provides support for caching, which is a technique for storing frequently accessed data in memory. This can help 
+   to improve performance and reduce the number of database queries.
+-> Transactions: Hibernate ORM provides support for transactions, which are a mechanism for ensuring data consistency and integrity.  
+   Transactions can be used to group a set of database operations into a single atomic unit of work.
+-> Query Language: Hibernate ORM provides support for HQL (Hibernate Query Language), which is a powerful and flexible query language for   
+   querying objects. HQL is similar to SQL but operates on objects rather than tables.

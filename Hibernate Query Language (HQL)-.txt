@@ -1,0 +1,11 @@
+Hibernate Query Language (HQL):-
+==============================
+-> Hibernate Query Language (HQL) is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL  
+   works with persistent objects and their properties. HQL queries are translated by Hibernate into conventional SQL queries, which in turns 
+   perform action on database.
+
+-> Although you can use SQL statements directly with Hibernate using Native SQL, but I would recommend to use HQL whenever possible to avoid  
+   database portability hassles, and to take advantage of Hibernate's SQL generation and caching strategies.
+
+-> Keywords like SELECT, FROM, and WHERE, etc., are not case sensitive, but properties like table and column names are case sensitive in
+   HQL.

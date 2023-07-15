@@ -1,0 +1,14 @@
+Advantages of using Hibernate ORM Framework:-
+==========================================
+
+-> Simplifies Database Operations: Hibernate ORM simplifies database operations by providing an easy-to-use API for storing and retrieving 
+   data from the database. This reduces the amount of boilerplate code required to interact with the database.
+
+-> Improves Performance: Hibernate ORM provides support for caching, which improves application performance by reducing the number of 
+   database queries. It caches frequently accessed data in memory, which reduces the time taken to access the data from the database.
+
+-> Platform Independence: Hibernate ORM is platform-independent, which means it can be used with any relational database. This provides 
+   flexibility and makes it easy to switch databases without changing the code.
+
+-> Open-Source: Hibernate ORM is an open-source framework, which means it is freely available and can be used by anyone. This reduces the 
+   cost of development and makes it easy to get started with Hibernate ORM.

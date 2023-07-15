@@ -1,0 +1,19 @@
+Many to Many Associations:-
+=========================
+Many-to-many associations are a type of relationship between entities in a database or object-oriented modeling, where multiple instances of one entity are associated with multiple instances of another entity. In other words, it represents a many-to-many relationship between two entities.
+
+Here are some key points about many-to-many associations:
+
+1. Relationship Cardinality: In a many-to-many association, each instance of one entity can be associated with multiple instances of another entity, and vice versa. For example, in a university system, a student can enroll in multiple courses, and each course can have multiple students enrolled.
+
+2. Join Table: In a relational database, a many-to-many association is typically implemented using a join table, also known as a junction table or link table. The join table has foreign key columns referencing the primary keys of both entities involved in the association. It represents the associations between the entities by storing pairs of primary key values.
+
+3. Mapping in Object-Relational Mapping (ORM): In ORM frameworks like Hibernate, many-to-many associations are represented using object-oriented concepts. Entities are associated with each other using collection properties. For example, a Student entity may have a collection of Course entities representing the courses they are enrolled in.
+
+4. Navigation: With a many-to-many association, it is possible to navigate from one entity to another in both directions. For example, given a student, you can access the courses they are enrolled in, and vice versa, given a course, you can access the students enrolled in that course.
+
+5. Additional Metadata: The join table in a many-to-many association can contain additional columns to store metadata specific to the association. For example, in the student-course example, the join table may include a column to store the enrollment date or the grade obtained by the student in that course.
+
+6. Cascading Operations: Many-to-many associations can also involve cascading operations. For example, when deleting a student, you may want to delete their enrollment records in courses as well, or when deleting a course, you may want to remove all student enrollments for that course.
+
+7. Querying: Many-to-many associations provide flexibility in querying data. You can easily retrieve related entities based on the association, filter entities based on criteria related to the associated entities, and perform aggregate calculations or ordering based on associated entities.

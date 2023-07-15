@@ -1,0 +1,39 @@
+Hibernate caching:-
+=================
+Hibernate caching refers to the mechanism provided by Hibernate to store and retrieve data from memory, reducing the need to fetch data from the database repeatedly. Caching can significantly improve the performance of database operations by reducing the number of round trips to the database and the execution of complex queries.
+
+Hibernate provides different levels of caching that can be configured based on specific requirements:
+
+1. First-level Cache (Session Cache):
+   - The first-level cache, also known as the session cache, is enabled by default in Hibernate. It operates within the scope of a single  
+     Hibernate Session.
+   - The first-level cache stores entities and their associated data retrieved during a session. It acts as an in-memory cache of recently 
+     accessed objects.
+   - Whenever an object is queried or loaded using Hibernate, it is stored in the first-level cache. Subsequent requests for the same 
+     object within the same session are served from the cache, avoiding the need for database access.
+   - The first-level cache is transaction-scoped and is automatically cleared when the session is closed or cleared explicitly.
+
+2. Second-level Cache:
+   - The second-level cache is an optional cache that operates at the session factory level, providing a shared cache across multiple 
+     sessions.
+   - Unlike the first-level cache, the second-level cache is not tied to a specific session. It is shared among multiple sessions and can 
+     be used to cache entities, query results, or arbitrary objects.
+   - The second-level cache is configured with various caching strategies, such as read-only, read-write, or transactional, to control how 
+     the cache is utilized and updated.
+   - Hibernate supports various second-level cache providers, including popular options like Ehcache, Infinispan, and Hazelcast.
+
+3. Query Cache:
+   - The query cache is a specific type of cache used to cache the results of queries executed using Hibernate's query API or HQL.
+   - When a query is executed, Hibernate checks if the same query with the same parameters has been executed before and stored in the 
+     cache. If the query and parameters match, the cached result is returned instead of executing the query again.
+   - The query cache can improve the performance of repeated queries, especially when the query results change infrequently.
+
+            
+
+
+
+
+
+
+              
+                      

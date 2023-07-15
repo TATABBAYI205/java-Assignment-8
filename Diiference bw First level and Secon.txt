@@ -1,0 +1,18 @@
+Diiference b/w First level and Second level caches:-
+===================================================
+ Here's a table summarizing the key differences between the first-level cache (Session cache) and the second-level cache in Hibernate:
+___________________________________________________________________________________________________________________________________________
+| Feature                | First-Level Cache (Session Cache)                           | Second-Level Cache                               |
+|------------------------|-------------------------------------------------------------|--------------------------------------------------|
+| Scope                  | Limited to a single Hibernate Session                       | Shared across multiple Hibernate Sessions        |
+| Relationship to Session| Associated with a specific Session within a Session Factory | Associated with the entire Session Factory       |
+| Factory                |                                                             |                                                  |
+| Data Storage           | Entity instances and associated data                        | Entities, query results, and arbitrary objects   |
+| Cache Level            | Transaction-scoped                                          | Session Factory-scoped                           |
+| Caching Granularity    | Entity-level granularity                                    | Configurable caching strategies                  |
+| Lifespan               | Cleared when the Session is closed or cleared explicitly    | Persists beyond the lifespan of a single session |
+| Cache Provider         | Built-in within Hibernate framework                         | Configurable with various cache providers        |
+| Configuration          | No explicit configuration required (enabled by default)     | Requires explicit configuration and setup        |
+| Query Result Caching   | Not supported                                               | Supported via separate Query Cache               |
+|________________________|_____________________________________________________________|__________________________________________________|
+

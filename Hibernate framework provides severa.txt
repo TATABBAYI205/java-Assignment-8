@@ -1,0 +1,17 @@
+Hibernate framework provides several important interfaces that define key components and functionalities. Here are some of the important interfaces in Hibernate:
+
+1. SessionFactory: This interface represents a factory for creating Hibernate Session objects. It is responsible for initializing Hibernate and providing sessions for database operations. The SessionFactory is typically created once during application startup and shared throughout the application.
+
+2. Session: The Session interface represents a single unit of work with the database. It provides methods for querying, saving, updating, and deleting objects. The Session acts as a gateway to interact with the database using Hibernate.
+
+3. Transaction: The Transaction interface represents a database transaction. It provides methods to control the transaction boundaries, such as begin(), commit(), and rollback(). Transactions ensure data integrity and consistency during database operations.
+
+4. Query: The Query interface provides methods to execute queries against the database. It supports both HQL (Hibernate Query Language) and native SQL queries. Developers can use Query to retrieve data from the database based on specific criteria or conditions.
+
+5. Criteria: The Criteria interface provides a programmatic way to create and execute queries using a criteria-based approach. It allows developers to build queries dynamically based on various conditions and criteria, providing a more flexible and type-safe alternative to writing raw SQL or HQL queries.
+
+6. Configuration: The Configuration interface represents the configuration settings for Hibernate. It allows developers to specify the database connection details, mapping configurations, caching options, and other Hibernate-specific settings. Configuration is used to build the SessionFactory.
+
+7. TransactionManager: The TransactionManager interface defines methods for managing transactions in a Java EE environment. It is typically used when integrating Hibernate with a Java EE application server, such as JBoss or WebLogic. The TransactionManager handles transaction demarcation and coordination.
+
+8. SessionBuilder: The SessionBuilder interface represents a builder pattern for creating a Hibernate Session. It provides methods to set various configuration options and build a Session object. SessionBuilder is typically used when creating a Session programmatically rather than relying on the SessionFactory.
